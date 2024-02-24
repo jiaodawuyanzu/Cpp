@@ -1,0 +1,5 @@
+# ninja log v5
+1	220	7303136918117530	build.ninja	ec78a612e9369c42
+7	503	7300493829263322	CMakeFiles/Cpp.dir/main.cpp.obj	d8b0427b6f8f22e0
+503	656	7300493830729373	Cpp.exe	68de1b1f848bf7d8
+3	492	7300493829153588	CMakeFiles/Cpp.dir/basic/Complex.cpp.obj	d54590cb69d3fad4
