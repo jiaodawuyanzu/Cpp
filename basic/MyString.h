@@ -1,37 +1,68 @@
-//
-// Created by 29918 on 2024/2/28.
-//
-
-#ifndef CPP_MYSTRING_H
-#define CPP_MYSTRING_H
+#ifndef __MYSTRING__
+#define __MYSTRING__
+#include <iostream>
 #include <cstring>
+using namespace std;
+namespace Mystring {
 
-class String {
-    String(const char* str = 0);
-    String(const Sting& str);
-    String& operator = (const String& str);
-    ~String();
-    char * getString() const {return mData;};
-private:
-    char* mData;
-};
+    class String {
+    public:
+        String(const char *cstr = 0);
+
+        String(const String &str);
+
+        String &operator=(const String &str);
+
+        ~String();
+
+        char *get_c_str() const { return m_data; }
+
+    private:
+        char *m_data;
+    };
 
 
-inline String::String(const char* str = 0)
-{
-    if (str) {
-        mData = new char[strlen(str) + 1];
-        strcpy(mData, str);
+
+inline
+String::String(const char *cstr) {
+    if (cstr) {
+        m_data = new char[strlen(cstr) + 1];
+        strcpy(m_data, cstr);
     } else {
-        mData = new char[1];
-        *mData = '\0';
+        m_data = new char[1];
+        *m_data = '\0';
     }
 }
 
-inline String::~String()
-{
-    delete[] mData;
+inline
+String::~String() {
+    delete[] m_data;
+}
+
+inline
+String &String::operator=(const String &str) {
+    if (this == &str)
+        return *this;
+
+    delete[] m_data;
+    m_data = new char[strlen(str.m_data) + 1];
+    strcpy(m_data, str.m_data);
+    return *this;
+}
+
+inline
+String::String(const String &str) {
+    m_data = new char[strlen(str.m_data) + 1];
+    strcpy(m_data, str.m_data);
 }
 
 
-#endif //CPP_MYSTRING_H
+
+    inline ostream &operator<<(ostream &os, const String &str) {
+        os << str.get_c_str();
+        return os;
+    }
+
+    int StringTest();
+} //MyString
+#endif
