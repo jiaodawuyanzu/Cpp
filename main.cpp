@@ -3,6 +3,7 @@
 #include "basic/Complex-test.h"
 #include "basic/MyString.h"
 #include <string>
+#include <sstream>
 
 using namespace std;
 
@@ -15,5 +16,6 @@ int main() {
     complex *cc = new complex[3];
 
     Mystring::StringTest();
+
     return 0;
 }
