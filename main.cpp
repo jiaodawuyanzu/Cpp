@@ -7,15 +7,16 @@
 
 using namespace std;
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    ComplexTesttMain();
-    string s("hello");
-    cout << s << endl;
+//int main() {
+//    std::cout << "Hello, World!" << std::endl;
+//    ComplexTesttMain();
+//    string s("hello");
+//    cout << s << endl;
+//
+//    complex *cc = new complex[3];
+//
+//    Mystring::StringTest();
+//
+//    return 0;
+//}
 
-    complex *cc = new complex[3];
-
-    Mystring::StringTest();
-
-    return 0;
-}
