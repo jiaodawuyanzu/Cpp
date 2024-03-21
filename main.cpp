@@ -4,6 +4,7 @@
 #include "basic/MyString.h"
 #include "basic-2/template.h"
 #include "basic-2/conversion.h"
+#include "basic-2/objectModel.h"
 #include <string>
 #include <sstream>
 #include <vector>
@@ -22,6 +23,8 @@ int main() {
 
     TestConvertion();
     TestMemTemplate();
+    TestObjectModel1();
+    TestObjectModel2();
     return 0;
 }
 

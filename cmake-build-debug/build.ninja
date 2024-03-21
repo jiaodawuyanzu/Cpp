@@ -79,6 +79,12 @@ build CMakeFiles/Cpp.dir/basic-2/template.cpp.obj: CXX_COMPILER__Cpp_Debug D$:/C
   OBJECT_DIR = CMakeFiles\Cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\Cpp.dir\basic-2
 
+build CMakeFiles/Cpp.dir/basic-2/objectModel.cpp.obj: CXX_COMPILER__Cpp_Debug D$:/Coding/Clion_WorkSpace/Cpp-learning/Cpp/basic-2/objectModel.cpp || cmake_object_order_depends_target_Cpp
+  DEP_FILE = CMakeFiles\Cpp.dir\basic-2\objectModel.cpp.obj.d
+  FLAGS = -fdump-lang-class -g -fdiagnostics-color=always -std=gnu++17
+  OBJECT_DIR = CMakeFiles\Cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Cpp.dir\basic-2
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Cpp
@@ -87,7 +93,7 @@ build CMakeFiles/Cpp.dir/basic-2/template.cpp.obj: CXX_COMPILER__Cpp_Debug D$:/C
 #############################################
 # Link the executable Cpp.exe
 
-build Cpp.exe: CXX_EXECUTABLE_LINKER__Cpp_Debug CMakeFiles/Cpp.dir/main.cpp.obj CMakeFiles/Cpp.dir/basic/Complex-test.cpp.obj CMakeFiles/Cpp.dir/basic/MyString-test.cpp.obj CMakeFiles/Cpp.dir/basic-2/conversion.cpp.obj CMakeFiles/Cpp.dir/basic-2/template.cpp.obj
+build Cpp.exe: CXX_EXECUTABLE_LINKER__Cpp_Debug CMakeFiles/Cpp.dir/main.cpp.obj CMakeFiles/Cpp.dir/basic/Complex-test.cpp.obj CMakeFiles/Cpp.dir/basic/MyString-test.cpp.obj CMakeFiles/Cpp.dir/basic-2/conversion.cpp.obj CMakeFiles/Cpp.dir/basic-2/template.cpp.obj CMakeFiles/Cpp.dir/basic-2/objectModel.cpp.obj
   FLAGS = -fdump-lang-class -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Cpp.dir
