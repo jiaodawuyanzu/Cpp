@@ -51,25 +51,31 @@ build cmake_object_order_depends_target_Cpp: phony || CMakeFiles/Cpp.dir
 
 build CMakeFiles/Cpp.dir/main.cpp.obj: CXX_COMPILER__Cpp_Debug D$:/Coding/Clion_WorkSpace/Cpp-learning/Cpp/main.cpp || cmake_object_order_depends_target_Cpp
   DEP_FILE = CMakeFiles\Cpp.dir\main.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -fdump-lang-class -g -fdiagnostics-color=always -std=gnu++17
   OBJECT_DIR = CMakeFiles\Cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\Cpp.dir
 
 build CMakeFiles/Cpp.dir/basic/Complex-test.cpp.obj: CXX_COMPILER__Cpp_Debug D$:/Coding/Clion_WorkSpace/Cpp-learning/Cpp/basic/Complex-test.cpp || cmake_object_order_depends_target_Cpp
   DEP_FILE = CMakeFiles\Cpp.dir\basic\Complex-test.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -fdump-lang-class -g -fdiagnostics-color=always -std=gnu++17
   OBJECT_DIR = CMakeFiles\Cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\Cpp.dir\basic
 
 build CMakeFiles/Cpp.dir/basic/MyString-test.cpp.obj: CXX_COMPILER__Cpp_Debug D$:/Coding/Clion_WorkSpace/Cpp-learning/Cpp/basic/MyString-test.cpp || cmake_object_order_depends_target_Cpp
   DEP_FILE = CMakeFiles\Cpp.dir\basic\MyString-test.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -fdump-lang-class -g -fdiagnostics-color=always -std=gnu++17
   OBJECT_DIR = CMakeFiles\Cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\Cpp.dir\basic
 
 build CMakeFiles/Cpp.dir/basic-2/conversion.cpp.obj: CXX_COMPILER__Cpp_Debug D$:/Coding/Clion_WorkSpace/Cpp-learning/Cpp/basic-2/conversion.cpp || cmake_object_order_depends_target_Cpp
   DEP_FILE = CMakeFiles\Cpp.dir\basic-2\conversion.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  FLAGS = -fdump-lang-class -g -fdiagnostics-color=always -std=gnu++17
+  OBJECT_DIR = CMakeFiles\Cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Cpp.dir\basic-2
+
+build CMakeFiles/Cpp.dir/basic-2/template.cpp.obj: CXX_COMPILER__Cpp_Debug D$:/Coding/Clion_WorkSpace/Cpp-learning/Cpp/basic-2/template.cpp || cmake_object_order_depends_target_Cpp
+  DEP_FILE = CMakeFiles\Cpp.dir\basic-2\template.cpp.obj.d
+  FLAGS = -fdump-lang-class -g -fdiagnostics-color=always -std=gnu++17
   OBJECT_DIR = CMakeFiles\Cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\Cpp.dir\basic-2
 
@@ -81,8 +87,8 @@ build CMakeFiles/Cpp.dir/basic-2/conversion.cpp.obj: CXX_COMPILER__Cpp_Debug D$:
 #############################################
 # Link the executable Cpp.exe
 
-build Cpp.exe: CXX_EXECUTABLE_LINKER__Cpp_Debug CMakeFiles/Cpp.dir/main.cpp.obj CMakeFiles/Cpp.dir/basic/Complex-test.cpp.obj CMakeFiles/Cpp.dir/basic/MyString-test.cpp.obj CMakeFiles/Cpp.dir/basic-2/conversion.cpp.obj
-  FLAGS = -g
+build Cpp.exe: CXX_EXECUTABLE_LINKER__Cpp_Debug CMakeFiles/Cpp.dir/main.cpp.obj CMakeFiles/Cpp.dir/basic/Complex-test.cpp.obj CMakeFiles/Cpp.dir/basic/MyString-test.cpp.obj CMakeFiles/Cpp.dir/basic-2/conversion.cpp.obj CMakeFiles/Cpp.dir/basic-2/template.cpp.obj
+  FLAGS = -fdump-lang-class -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Cpp.dir
   POST_BUILD = cd .
