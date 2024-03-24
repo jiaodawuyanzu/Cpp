@@ -28,7 +28,8 @@ int main() {
 //    TestObjectModel1();
 //    TestObjectModel2();
 
-    TestNewDelete1();
+//    TestNewDelete1();
+    TestPlacementNewAndDelete();
     return 0;
 }
 

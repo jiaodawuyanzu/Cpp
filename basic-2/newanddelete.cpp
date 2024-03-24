@@ -67,6 +67,42 @@ void Foo::operator delete[](void *ptr) noexcept
     MyFree(ptr);
 }
 
+void* Foo::operator new(size_t size, void *start)
+{
+    cout << "this is placement new 1" << endl;
+    return start;
+}
+
+void* Foo::operator new(size_t size, long extra)
+{
+    cout << "this is placement new 2" << endl;
+    return MyAlloc(size + extra);
+}
+
+void* Foo::operator new(size_t size, long extra, char init)
+{
+    cout << "this is placement new 3" << endl;
+    return MyAlloc(size + extra);
+}
+
+void Foo::operator delete(void *ptr, void *extra)
+{
+    cout << "this is placement delete 1" << endl;
+    MyFree(extra);
+}
+
+void Foo::operator delete(void *ptr, long extra)
+{
+    cout << "this is placement delete 2" << endl;
+    MyFree(ptr);
+}
+
+void Foo::operator delete(void *ptr, long extra, char init)
+{
+    cout << "this is placement delete 3" << endl;
+    MyFree(ptr);
+}
+
 void TestNewDelete1()
 {
     cout << __func__ << endl;
@@ -93,4 +129,33 @@ void TestNewDelete1()
         pf2[i].testFunc();
     }
     delete[] pf2;
+}
+
+void TestPlacementNewAndDelete()
+{
+    cout << __func__ << endl;
+    Foo start;
+    Foo* p1 = new Foo();
+    delete p1;
+
+//    Foo* p2 = new(&start) Foo();
+//    delete p2;
+
+    Foo* p3 = new(100) Foo();
+    delete p3;
+
+    Foo* p4 = new(100, 'a') Foo();
+    delete p4;
+
+    Foo* p5 = new(100) Foo(1);
+    delete p5;
+
+    Foo* p6 = new(100, 'a') Foo(1);
+    delete p6;
+
+//    Foo* p7 = new(&start) Foo(1);
+//    delete p7;
+
+    Foo* p8 = new Foo(1);
+    delete p8;
 }
