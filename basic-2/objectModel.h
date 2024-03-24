@@ -39,7 +39,7 @@ private:
 };
 
 
-// template method
+// template method 传入的this指针，根据对象来动态绑定
 class Cdocument {
 public:
     void onFileOpen() {

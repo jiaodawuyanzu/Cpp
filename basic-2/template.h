@@ -56,5 +56,15 @@ public:
     T2 second;
 };
 
+void print();
+
+template <typename T, typename... Types>
+void print(const T& firstArg, const Types&... args)
+{
+    cout << firstArg << endl;
+    print(args...);
+}
+
 void TestMemTemplate();
+void TestVariadic();
 #endif //CPP_TEMPLATE_H

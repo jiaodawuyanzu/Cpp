@@ -3,6 +3,7 @@
 //
 
 #include "template.h"
+#include <bitset>
 
 class Base1 {
 public:
@@ -32,6 +33,11 @@ public:
     int d2{8};
 };
 
+void print()
+{
+    cout << "final" << endl;
+}
+
 void TestMemTemplate()
 {
     pairtem<Derived1, Derived2> p;
@@ -41,4 +47,9 @@ void TestMemTemplate()
     Derived1 d1;
     Derived2 d2;
     pairtem<Derived1, Derived2> p3(d1, d2);
+}
+
+void TestVariadic()
+{
+    print(7.5, "hello", bitset<16>(388), 42);
 }
