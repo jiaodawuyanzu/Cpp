@@ -6,6 +6,7 @@
 #include "basic-2/conversion.h"
 #include "basic-2/objectModel.h"
 #include "basic-2/newanddelete.h"
+#include "STL/common.h"
 #include <string>
 #include <sstream>
 #include <vector>
@@ -38,8 +39,9 @@ int main() {
 //    TestObjectModel2();
 
 //    TestNewDelete1();
-    TestPlacementNewAndDelete();
-    cout << sizeof(A) << " " << sizeof(A::B) << endl;
+//    TestPlacementNewAndDelete();
+//    cout << sizeof(A) << " " << sizeof(A::B) << endl;
+    get_a_target_string();
     return 0;
 }
 
