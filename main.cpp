@@ -12,6 +12,15 @@
 
 using namespace std;
 
+class A {
+public:
+    class B {
+    public:
+        int b;
+    };
+public:
+    int a;
+};
 int main() {
     std::cout << "Hello, World!" << std::endl;
 //    ComplexTesttMain();
@@ -30,6 +39,7 @@ int main() {
 
 //    TestNewDelete1();
     TestPlacementNewAndDelete();
+    cout << sizeof(A) << " " << sizeof(A::B) << endl;
     return 0;
 }
 
