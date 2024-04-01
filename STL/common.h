@@ -8,7 +8,7 @@
 #include <cstring>
 #include <string>
 using namespace std;
-
+const long ASIZE  =   500000L;
 long get_a_target_long();
 string get_a_target_string();
 int compareLongs(const void* a, const void* b);

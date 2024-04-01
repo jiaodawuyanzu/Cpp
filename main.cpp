@@ -7,6 +7,8 @@
 #include "basic-2/objectModel.h"
 #include "basic-2/newanddelete.h"
 #include "STL/common.h"
+#include "STL/arraytest.h"
+#include "STL/vectortest.h"
 #include <string>
 #include <sstream>
 #include <vector>
@@ -42,6 +44,10 @@ int main() {
 //    TestPlacementNewAndDelete();
 //    cout << sizeof(A) << " " << sizeof(A::B) << endl;
     get_a_target_string();
+    arrayTest::test_array();
+    long value = 10000000;
+    long& vv = value;
+    vectortest::vector_test(value);
     return 0;
 }
 
