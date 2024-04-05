@@ -4,9 +4,11 @@
 
 #ifndef CPP_LISTTEST_H
 #define CPP_LISTTEST_H
+#include <list>
 
+using namespace std;
 namespace listtest {
-    void list_test();
+    void list_test(long& value);
 }
 
 

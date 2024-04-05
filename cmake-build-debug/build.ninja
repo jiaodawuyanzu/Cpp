@@ -115,6 +115,12 @@ build CMakeFiles/Cpp.dir/STL/vectortest.cpp.obj: CXX_COMPILER__Cpp_Debug D$:/Cod
   OBJECT_DIR = CMakeFiles\Cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\Cpp.dir\STL
 
+build CMakeFiles/Cpp.dir/STL/allocatortest.cpp.obj: CXX_COMPILER__Cpp_Debug D$:/Coding/Clion_WorkSpace/Cpp-learning/Cpp/STL/allocatortest.cpp || cmake_object_order_depends_target_Cpp
+  DEP_FILE = CMakeFiles\Cpp.dir\STL\allocatortest.cpp.obj.d
+  FLAGS = -fdump-lang-class -g -fdiagnostics-color=always -std=gnu++17
+  OBJECT_DIR = CMakeFiles\Cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\Cpp.dir\STL
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Cpp
@@ -123,7 +129,7 @@ build CMakeFiles/Cpp.dir/STL/vectortest.cpp.obj: CXX_COMPILER__Cpp_Debug D$:/Cod
 #############################################
 # Link the executable Cpp.exe
 
-build Cpp.exe: CXX_EXECUTABLE_LINKER__Cpp_Debug CMakeFiles/Cpp.dir/main.cpp.obj CMakeFiles/Cpp.dir/basic/Complex-test.cpp.obj CMakeFiles/Cpp.dir/basic/MyString-test.cpp.obj CMakeFiles/Cpp.dir/basic-2/conversion.cpp.obj CMakeFiles/Cpp.dir/basic-2/template.cpp.obj CMakeFiles/Cpp.dir/basic-2/objectModel.cpp.obj CMakeFiles/Cpp.dir/basic-2/newanddelete.cpp.obj CMakeFiles/Cpp.dir/STL/arraytest.cpp.obj CMakeFiles/Cpp.dir/STL/common.cpp.obj CMakeFiles/Cpp.dir/STL/component.cpp.obj CMakeFiles/Cpp.dir/STL/vectortest.cpp.obj
+build Cpp.exe: CXX_EXECUTABLE_LINKER__Cpp_Debug CMakeFiles/Cpp.dir/main.cpp.obj CMakeFiles/Cpp.dir/basic/Complex-test.cpp.obj CMakeFiles/Cpp.dir/basic/MyString-test.cpp.obj CMakeFiles/Cpp.dir/basic-2/conversion.cpp.obj CMakeFiles/Cpp.dir/basic-2/template.cpp.obj CMakeFiles/Cpp.dir/basic-2/objectModel.cpp.obj CMakeFiles/Cpp.dir/basic-2/newanddelete.cpp.obj CMakeFiles/Cpp.dir/STL/arraytest.cpp.obj CMakeFiles/Cpp.dir/STL/common.cpp.obj CMakeFiles/Cpp.dir/STL/component.cpp.obj CMakeFiles/Cpp.dir/STL/vectortest.cpp.obj CMakeFiles/Cpp.dir/STL/allocatortest.cpp.obj
   FLAGS = -fdump-lang-class -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Cpp.dir

@@ -1,10 +1,10 @@
 # ninja log v5
-0	901	7336804379420584	build.ninja	ec78a612e9369c42
+0	757	7340307076104555	build.ninja	ec78a612e9369c42
+1160	1381	7336804598777783	Cpp.exe	74c5833be8238eaf
 4	939	7336803876699226	CMakeFiles/Cpp.dir/main.cpp.obj	a915389f7e885e75
-2347	3338	7336791028217230	Cpp.exe	b926526d7f9a1843
 3	502	7308276106957054	CMakeFiles/Cpp.dir/basic/Complex.cpp.obj	d54590cb69d3fad4
-10	2992	7327365196411834	CMakeFiles/Cpp.dir/basic-2/conversion.cpp.obj	b1835e10e1639967
 18	2979	7327365196202397	CMakeFiles/Cpp.dir/basic/Complex-test.cpp.obj	42ce35ca7f05efa
+10	2992	7327365196411834	CMakeFiles/Cpp.dir/basic-2/conversion.cpp.obj	b1835e10e1639967
 10	1125	7329798118505559	CMakeFiles/Cpp.dir/basic-2/template.cpp.obj	3918bcb3e8e8b8dd
 3	2975	7327365196172501	CMakeFiles/Cpp.dir/basic/MyString-test.cpp.obj	b23a98c6d794f2d0
 16	1911	7329850036602922	CMakeFiles/Cpp.dir/basic-2/objectModel.cpp.obj	8bd2c227199768ae
@@ -12,6 +12,7 @@
 38	2325	7336791018118177	CMakeFiles/Cpp.dir/STL/arraytest.cpp.obj	cd2b8dc6ef37a6d6
 31	2347	7336791018347930	CMakeFiles/Cpp.dir/STL/common.cpp.obj	7d9f833a9f9aeb61
 10	1146	7334290758325666	CMakeFiles/Cpp.dir/STL/component.cpp.obj	5d8ef80ea83f1d47
-0	757	7336804379420584	build.ninja	ec78a612e9369c42
 3	1159	7336804596596296	CMakeFiles/Cpp.dir/STL/vectortest.cpp.obj	9ef79dccbb4adbdc
-1160	1381	7336804598777783	Cpp.exe	74c5833be8238eaf
+0	920	7340307076104555	build.ninja	ec78a612e9369c42
+4	3320	7340308088599651	CMakeFiles/Cpp.dir/STL/allocatortest.cpp.obj	cf2b173fdb9189db
+3321	5148	7340308106735554	Cpp.exe	540645345545e9b
