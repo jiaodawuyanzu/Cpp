@@ -12,6 +12,7 @@
 #include <string>
 #include <sstream>
 #include <vector>
+#include <list>
 
 using namespace std;
 
@@ -48,6 +49,8 @@ int main() {
     long value = 10000000;
     long& vv = value;
     vectortest::vector_test(value);
+    cout << sizeof(list<int>) << endl;
+    cout << sizeof(list<bool>) << endl;
     return 0;
 }
 
